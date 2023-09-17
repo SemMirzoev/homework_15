@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bar"
+        tools:ignore="MissingConstraints"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startLin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="33dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="33dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="30dp"
+        android:text="Create
+        your account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintTop_toBottomOf="@id/bar"
+        app:layout_constraintDimensionRatio="6:1"
+        android:layout_marginTop="58dp"
+        android:fontFamily="monospace"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        app:layout_constraintTop_toBottomOf="@+id/create"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        android:layout_marginTop="19dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif-light"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email address"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        app:layout_constraintTop_toBottomOf="@id/edit1"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif-light"/>
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        app:layout_constraintTop_toBottomOf="@id/edit2"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif-light"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        app:layout_constraintTop_toBottomOf="@id/edit3"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif-light"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2D201C"
+        android:text="SIGN UP"
+        android:textSize="16sp"
+        app:cornerRadius="26.5dp"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        app:layout_constraintTop_toBottomOf="@id/edit4"
+        android:layout_marginTop="44dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or sign up with"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        app:layout_constraintTop_toBottomOf="@id/bottom"
+        android:layout_marginTop="28dp"/>
+
+
+    <ImageButton
+        android:id="@+id/apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_31"
+        android:src="@drawable/apple"
+        app:layout_constraintTop_toTopOf="@id/google"
+        app:layout_constraintBottom_toBottomOf="@id/google"
+        app:layout_constraintEnd_toStartOf="@id/google"
+        android:paddingBottom="3dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <ImageButton
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_30"
+        android:src="@drawable/google"
+        app:layout_constraintStart_toStartOf="@id/startLin"
+        app:layout_constraintEnd_toEndOf="@id/endL"
+        app:layout_constraintTop_toBottomOf="@id/subtext"
+        android:layout_marginTop="28dp"
+        />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_30"
+        android:src="@drawable/grommet_icons_facebook_option"
+        app:layout_constraintTop_toTopOf="@id/google"
+        app:layout_constraintBottom_toBottomOf="@id/google"
+        app:layout_constraintStart_toEndOf="@id/google"
+        android:layout_marginStart="20dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/subtext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have account?"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toEndOf="@id/apple"
+        app:layout_constraintEnd_toStartOf="@id/google"
+        app:layout_constraintTop_toBottomOf="@id/apple"
+        android:layout_marginTop="40dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logIn"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toEndOf="@id/subtext2"
+        app:layout_constraintTop_toTopOf="@id/subtext2"
+        app:layout_constraintBottom_toBottomOf="@id/subtext2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

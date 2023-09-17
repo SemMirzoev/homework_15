@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#15141F"
+    >
+
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mask_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25.95dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25.95dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.135"
+        />
+
+    <TextView
+        android:id="@+id/starwars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Star Wars: The Last Jedi"
+        android:textColor="#FFFFFF"
+        android:textSize="25.95sp"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="25.95dp"
+        android:layout_marginStart="6dp"/>
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1C1A1A"
+        android:text="4K"
+        android:textColor="#BCBCBC"
+        app:layout_constraintStart_toEndOf="@id/starwars"
+        app:layout_constraintTop_toTopOf="@id/starwars"
+        app:layout_constraintBottom_toBottomOf="@id/starwars"
+        app:layout_constraintEnd_toEndOf="@id/endline"
+        app:chipCornerRadius="5.31dp"/>
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_342"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/starwars"
+        android:layout_marginTop="8.65dp"/>
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="152 minutes"
+        android:textSize="12.98sp"
+        android:textColor="#BCBCBC"
+        app:layout_constraintStart_toEndOf="@id/time"
+        app:layout_constraintBottom_toBottomOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/time"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_263"
+        app:layout_constraintTop_toTopOf="@id/minutes"
+        app:layout_constraintBottom_toBottomOf="@id/minutes"
+        app:layout_constraintStart_toEndOf="@id/minutes"
+        android:layout_marginStart="19.46dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7.0 (IMDb)"
+        android:textSize="12.98sp"
+        android:textColor="#BCBCBC"
+        app:layout_constraintTop_toTopOf="@id/star"
+        app:layout_constraintBottom_toBottomOf="@id/star"
+        app:layout_constraintStart_toEndOf="@id/star"
+        android:layout_marginStart="6.49dp"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#515151"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintEnd_toEndOf="@id/endline"
+        app:layout_constraintTop_toBottomOf="@id/minutes"
+        android:layout_marginTop="19.46dp"/>
+
+    <TextView
+        android:id="@+id/release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release date"
+        android:textColor="#FFFFFF"
+        android:textSize="17.3sp"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/line1"
+        android:layout_marginTop="17.3dp"
+        />
+
+    <TextView
+        android:id="@+id/december"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="December 9, 2017"
+        android:textColor="#BCBCBC"
+        android:textSize="12.98sp"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/release"
+        android:layout_marginTop="12.98dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:textColor="#FFFFFF"
+        android:textSize="17.3sp"
+        app:layout_constraintTop_toTopOf="@id/release"
+        app:layout_constraintBottom_toBottomOf="@id/release"
+        app:layout_constraintStart_toEndOf="@id/release"
+        android:layout_marginStart="60.55dp"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Action"
+        android:textColor="#BCBCBC"
+        android:textSize="12.98sp"
+        android:backgroundTint="#1C1A1A"
+        app:layout_constraintTop_toTopOf="@id/december"
+        app:layout_constraintBottom_toBottomOf="@id/december"
+        app:layout_constraintStart_toEndOf="@id/december"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:chipCornerRadius="16.22dp"/>
+
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sci-Fi"
+        android:textColor="#BCBCBC"
+        android:textSize="12.98sp"
+        android:backgroundTint="#1C1A1A"
+        app:layout_constraintTop_toTopOf="@id/action"
+        app:layout_constraintBottom_toBottomOf="@id/action"
+        app:layout_constraintStart_toEndOf="@id/action"
+        app:chipCornerRadius="16.22dp"
+        android:layout_marginStart="12.98dp"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintEnd_toEndOf="@id/endline"
+        app:layout_constraintTop_toBottomOf="@id/action"
+        android:background="#515151"
+        android:layout_marginTop="17.3dp"/>
+
+    <TextView
+        android:id="@+id/synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        android:textColor="#FFFFFF"
+        android:textSize="17.3sp"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        android:layout_marginTop="17.3dp"/>
+
+    <TextView
+        android:id="@+id/readmore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rey (Daisy Ridley) finally manages to find the legendary Jedi knight, Luke Skywalker (Mark Hamill) on an island with a magical aura. The heroes of The Force Awakens including Leia, Finn Read more.."
+        android:textSize="15.14sp"
+        android:textColor="#BCBCBC"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintEnd_toEndOf="@id/endline"
+        app:layout_constraintTop_toBottomOf="@id/synopsis"
+        android:layout_marginTop="12.98dp"
+        />
+
+    <TextView
+        android:id="@+id/movies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Related Movies"
+        android:textColor="#FFFFFF"
+        android:textSize="17.3sp"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/readmore"
+        android:layout_marginTop="21.63dp"/>
+
+    <ImageView
+        android:id="@+id/image_sw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mask_group_2"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/movies"
+        android:layout_marginTop="17.3dp"/>
+
+
+    <TextView
+        android:id="@+id/name_movie1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Star Wars: The Rise of Skywalker (2019)"
+        android:textSize="12.98sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@id/startline"
+        app:layout_constraintTop_toBottomOf="@id/image_sw1"
+        app:layout_constraintDimensionRatio="1:0.123"
+        android:layout_marginTop="12.98dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_sw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mask_group_3"
+        app:layout_constraintStart_toEndOf="@id/image_sw1"
+        app:layout_constraintTop_toBottomOf="@id/movies"
+        android:layout_marginTop="17.3dp"
+        android:layout_marginStart="17.3dp"/>
+
+    <TextView
+        android:id="@+id/name_movie2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Star Wars: The Force Awakens (2015)"
+        android:textSize="12.98sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/name_movie1"
+        app:layout_constraintTop_toBottomOf="@id/image_sw2"
+        app:layout_constraintDimensionRatio="1:0.123"
+        android:layout_marginTop="12.98dp"
+        android:layout_marginStart="30.28dp"/>
+
+
+    <ImageView
+        android:id="@+id/image_sw3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mask_group_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/image_sw2"
+        app:layout_constraintTop_toTopOf="@id/image_sw2"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Rogue One: A Star Wars Story (2016)"
+        android:textSize="12.98sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/name_movie2"
+        app:layout_constraintTop_toBottomOf="@id/image_sw3"
+        app:layout_constraintDimensionRatio="1:0.123"
+        android:layout_marginTop="12.98dp"
+        android:layout_marginStart="30.28dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
